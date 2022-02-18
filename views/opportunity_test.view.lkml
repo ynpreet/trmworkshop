@@ -5,6 +5,7 @@ view: opportunity_test {
   dimension: account_id {
     type: string
     sql: ${TABLE}.Account_ID ;;
+    primary_key: yes
   }
 
   dimension: account_name {
