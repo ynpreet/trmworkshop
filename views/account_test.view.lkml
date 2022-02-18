@@ -80,6 +80,12 @@ view: account_test {
 
   }
 
+  measure: average_arr {
+    type: average
+    sql: ${total_arr} ;;
+
+  }
+
   dimension: type {
     type: string
     sql: ${TABLE}.Type ;;
