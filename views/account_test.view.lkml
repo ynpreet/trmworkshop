@@ -87,6 +87,11 @@ view: account_test {
 
   }
 
+  measure: Percentage_ARR {
+    type: percent_of_total
+    sql: ${sum_arr} ;;
+  }
+
   dimension: type {
     type: string
     sql: ${TABLE}.Type ;;
