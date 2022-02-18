@@ -23,7 +23,7 @@ view: opportunity_test {
   }
 
   measure: total_amount {
-    type: number
+    type: sum
     sql: ${amount} ;;
 
   }
