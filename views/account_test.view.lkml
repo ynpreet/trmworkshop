@@ -83,6 +83,7 @@ view: account_test {
   measure: average_arr {
     type: average
     sql: ${total_arr} ;;
+    value_format: "0.##"
 
   }
 
