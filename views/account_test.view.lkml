@@ -73,6 +73,12 @@ view: account_test {
     sql: ${TABLE}.Total_ARR ;;
   }
 
+  measure: sum_arr{
+    type: sum
+    sql: ${total_arr} ;;
+
+  }
+
   dimension: type {
     type: string
     sql: ${TABLE}.Type ;;
