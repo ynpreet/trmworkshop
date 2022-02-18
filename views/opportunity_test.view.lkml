@@ -22,6 +22,12 @@ view: opportunity_test {
     sql: ${TABLE}.Amount ;;
   }
 
+  measure: total_amount {
+    type: number
+    sql: ${amount} ;;
+
+  }
+
   dimension_group: close {
     type: time
     timeframes: [
