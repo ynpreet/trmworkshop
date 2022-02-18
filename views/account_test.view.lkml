@@ -30,6 +30,7 @@ view: account_test {
 
   dimension: billing_country {
     type: string
+    map_layer_name: countries
     sql: ${TABLE}.Billing_Country ;;
   }
 
