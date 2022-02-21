@@ -36,6 +36,12 @@ view: wacv {
     sql: ${TABLE}.WACV ;;
   }
 
+  measure: total_wacv {
+    type:sum
+    sql: ${wacv} ;;
+
+  }
+
   set: detail {
     fields: [verticals, total_arr, wacv]
   }
