@@ -13,3 +13,5 @@ persist_with: trmlabs_workshop_default_datagroup
 explore: account_test {}
 
 explore: opportunity_test {}
+
+explore: arr_temp {}
