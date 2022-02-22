@@ -7,8 +7,8 @@ view: arr_temp {
     sql: ${TABLE}.Account_Name ;;
   }
 
-  dimension: arr {
-    type: number
+  measure: arr {
+    type: sum
     sql: ${TABLE}.ARR ;;
   }
 
@@ -72,8 +72,8 @@ view: arr_temp {
     sql: ${TABLE}.EoM_Date ;;
   }
 
-  dimension: total_arr {
-    type: number
+  measure: total_arr {
+    type: sum
     sql: ${TABLE}.Total_ARR ;;
   }
 
