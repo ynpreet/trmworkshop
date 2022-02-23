@@ -89,6 +89,7 @@ view: net_arr_retention_12_m {
   measure: net_dollar_retention {
     type: sum
     sql: ${TABLE}.net_dollar_retention ;;
+    value_format: "0.00\%"
   }
 
   set: detail {
