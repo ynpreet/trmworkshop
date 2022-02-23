@@ -10,6 +10,7 @@ view: account_test {
   dimension: account_id {
     type: string
     sql: ${TABLE}.Account_ID ;;
+    primary_key: yes
   }
 
   dimension: account_name {
@@ -29,6 +30,7 @@ view: account_test {
 
   dimension: billing_country {
     type: string
+    map_layer_name: countries
     sql: ${TABLE}.Billing_Country ;;
   }
 
@@ -70,6 +72,24 @@ view: account_test {
   dimension: total_arr {
     type: number
     sql: ${TABLE}.Total_ARR ;;
+  }
+
+  measure: sum_arr{
+    type: sum
+    sql: ${total_arr} ;;
+
+  }
+
+  measure: average_arr {
+    type: average
+    sql: ${total_arr} ;;
+    value_format: "0.##"
+
+  }
+
+  measure: Percentage_ARR {
+    type: percent_of_total
+    sql: ${sum_arr} ;;
   }
 
   dimension: type {

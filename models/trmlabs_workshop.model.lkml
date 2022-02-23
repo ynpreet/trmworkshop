@@ -12,6 +12,19 @@ persist_with: trmlabs_workshop_default_datagroup
 
 explore: account_test {}
 
-explore: opportunity_test {}
+
+#explore: opportunity_test {}
 
 explore: arr_temp {}
+
+explore: opportunity_test {
+  join: account_test {
+    relationship: many_to_one
+    sql_on: ${opportunity_test.account_id}=${account_test.account_id} ;;
+    type: inner
+  }
+
+}
+
+explore: wacv {}
+# branch 'master' of git@github.com:ynpreet/trmworkshop.git

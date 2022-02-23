@@ -5,6 +5,7 @@ view: opportunity_test {
   dimension: account_id {
     type: string
     sql: ${TABLE}.Account_ID ;;
+    primary_key: yes
   }
 
   dimension: account_name {
@@ -20,6 +21,12 @@ view: opportunity_test {
   dimension: amount {
     type: number
     sql: ${TABLE}.Amount ;;
+  }
+
+  measure: total_amount {
+    type: sum
+    sql: ${amount} ;;
+
   }
 
   dimension_group: close {
