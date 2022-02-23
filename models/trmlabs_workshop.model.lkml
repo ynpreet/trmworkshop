@@ -36,3 +36,5 @@ explore: opportunity_test {
 
 explore: wacv {}
 # branch 'master' of git@github.com:ynpreet/trmworkshop.git
+
+explore: people_data_temp {}
