@@ -38,3 +38,5 @@ explore: wacv {}
 # branch 'master' of git@github.com:ynpreet/trmworkshop.git
 
 explore: people_data_temp {}
+
+explore: net_arr_retention_12_m {}
