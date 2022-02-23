@@ -15,7 +15,15 @@ explore: account_test {}
 
 #explore: opportunity_test {}
 
-explore: arr_temp {}
+#explore: arr_temp {}
+
+explore: arr_temp {
+  join: account_test {
+    type:  inner
+    sql_on: ${arr_temp.account_name}=${account_test.account_name} ;;
+    relationship: one_to_one
+  }
+}
 
 explore: opportunity_test {
   join: account_test {
