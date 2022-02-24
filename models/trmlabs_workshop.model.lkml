@@ -46,3 +46,5 @@ explore: net_dollar_retention {}
 explore: gross_dollar_retention {}
 
 explore: logo_retention_ttm {}
+
+explore: gross_retention_ttm {}
