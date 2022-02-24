@@ -50,3 +50,7 @@ explore: logo_retention_ttm {}
 explore: gross_retention_ttm {}
 
 explore: efficiency_metrics_temp {}
+
+explore: sessions_all_csutomers_monthly {}
+
+explore : monthly_active_users_all_temp {}
