@@ -44,3 +44,5 @@ explore: net_arr_retention_12_m {}
 explore: net_dollar_retention {}
 
 explore: gross_dollar_retention {}
+
+explore: logo_retention_ttm {}
