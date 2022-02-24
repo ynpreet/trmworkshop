@@ -76,6 +76,10 @@ view: arr_temp {
     type: sum
     sql: ${TABLE}.Total_ARR ;;
   }
+  measure: average_arr {
+    type: average
+    sql: ${TABLE}.Total_ARR ;;
+  }
 
   dimension: type {
     type: string
