@@ -61,7 +61,7 @@ view: logo_retention_ttm {
       ttm_dollar_net_retention AS (
         SELECT
           e.month
-          , (t.arr + e.ttm_expansion - e.ttm_churn) / t.arr AS net_dollar_retention
+          , (t.arr - e.ttm_churn) / t.arr AS net_dollar_retention
         FROM total_arr AS t
         LEFT JOIN ttm_expansion AS e
           ON e.month = DATE_ADD(t.month, INTERVAL 1 YEAR)
@@ -71,7 +71,7 @@ view: logo_retention_ttm {
       monthly_avg_annualized_dollar_net_retention AS (
         SELECT
           e.month
-          , (t.arr + e.arr - m.churn) / t.arr AS net_dollar_retention
+          , (t.arr - m.churn) / t.arr AS net_dollar_retention
         FROM total_arr AS t
         LEFT JOIN expansion_arr AS e
           ON e.month = DATE_ADD(t.month, INTERVAL 1 MONTH)
