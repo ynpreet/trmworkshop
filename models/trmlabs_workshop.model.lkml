@@ -58,3 +58,5 @@ explore : monthly_active_users_all_temp {}
 explore: wau_mau_all_temp {}
 
 explore: transaction_screened_temp {}
+
+explore: wallet_screening_temp {}
