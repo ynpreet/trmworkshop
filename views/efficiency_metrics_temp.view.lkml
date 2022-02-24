@@ -7,7 +7,7 @@ view: efficiency_metrics_temp {
     sql: ${TABLE}.ARR ;;
   }
 
-  dimension: cac_payback {
+  measure: cac_payback {
     type: number
     sql: ${TABLE}.CAC_Payback ;;
     value_format: "$#,##0.00"
