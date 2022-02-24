@@ -23,7 +23,7 @@ view: wau_mau_all_temp {
   }
 
   measure: mar_1_2021__12_00_am___feb_24_2022__11_06_am {
-    type: sum
+    type: average
     sql: ${TABLE}.Mar_1_2021__12_00AM___Feb_24_2022__11_06AM ;;
   }
 
