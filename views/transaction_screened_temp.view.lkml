@@ -17,8 +17,8 @@ view: transaction_screened_temp {
     sql: ${TABLE}.date ;;
   }
 
-  dimension: transactions_screened {
-    type: number
+  measure: transactions_screened {
+    type: sum
     sql: ${TABLE}.transactions_screened ;;
   }
 
