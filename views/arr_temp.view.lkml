@@ -75,12 +75,12 @@ view: arr_temp {
   measure: total_arr {
     type: sum
     sql: ${TABLE}.Total_ARR ;;
-    value_format: "$#.00"
+    value_format: "$#,##0.00"
   }
   measure: average_arr {
     type: average
     sql: ${TABLE}.Total_ARR ;;
-    value_format: "$#.00"
+    value_format: "$#,##0.00"
   }
 
   dimension: type {
