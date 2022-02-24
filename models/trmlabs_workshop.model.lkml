@@ -56,3 +56,5 @@ explore: sessions_all_csutomers_monthly {}
 explore : monthly_active_users_all_temp {}
 
 explore: wau_mau_all_temp {}
+
+explore: transaction_screened_temp {}
