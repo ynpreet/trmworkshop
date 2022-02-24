@@ -62,3 +62,5 @@ explore: transaction_screened_temp {}
 explore: wallet_screening_temp {}
 
 explore: graphs_created_temp {}
+
+explore: trm_users_temp {}
