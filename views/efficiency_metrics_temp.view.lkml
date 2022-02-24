@@ -10,7 +10,6 @@ view: efficiency_metrics_temp {
   measure: cac_payback {
     type: sum
     sql: ${TABLE}.CAC_Payback ;;
-    value_format: "$#,##0.00"
   }
 
   measure: current_assets {
