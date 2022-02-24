@@ -48,3 +48,5 @@ explore: gross_dollar_retention {}
 explore: logo_retention_ttm {}
 
 explore: gross_retention_ttm {}
+
+explore: efficiency_metrics_temp {}

@@ -43,7 +43,7 @@ view: efficiency_metrics_temp {
   measure: gross_margin {
     type: sum
     sql: ${TABLE}.Gross_Margin ;;
-    value_format: "%0.00"
+    value_format: "0.00%"
   }
 
   measure: mrr {
