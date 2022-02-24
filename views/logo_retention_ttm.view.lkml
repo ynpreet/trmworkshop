@@ -23,7 +23,7 @@ view: logo_retention_ttm {
         FROM all_months
         LEFT JOIN `trm-business-operations.trm_sales_salesforce.arr_temp`
           ON month = DATE_ADD(EoM_Date, INTERVAL 1 DAY)
-          AND Type IN ('Churn', 'Contraction')
+          AND Type IN ('Churn')
         GROUP BY 1
       ),
 
