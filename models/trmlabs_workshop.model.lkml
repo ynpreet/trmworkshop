@@ -60,3 +60,5 @@ explore: wau_mau_all_temp {}
 explore: transaction_screened_temp {}
 
 explore: wallet_screening_temp {}
+
+explore: graphs_created_temp {}
